@@ -1,7 +1,8 @@
 <script setup>
 import {ref} from 'vue';
-import Person from "../assets/icon/MaterialSymbolsPersonOutlineRounded.vue";
-import Menu from "../assets/icon/PajamasHamburger.vue"
+import CarbonShoppingCart from "@/public/assets/icon/CarbonShoppingCart.vue";
+import Person from "@/public/assets/icon/MaterialSymbolsPersonOutlineRounded.vue";
+import Menu from "@/public/assets/icon/PajamasHamburger.vue"
 
 const showDropdown = ref(false);
 const showmenu = ref(false);
@@ -21,7 +22,7 @@ const toggleMenu = () => {
     <!-- Desktop Hi-Fi -->
     <div class="lg:grid lg:grid-cols-3 lg:pl-48 hidden">
       <div>
-        <img alt="" src="../assets/image/logo.png">
+        <img alt="" src="@/public/image/logo.png">
       </div>
       <div class="grid grid-cols-3 ">
         <div class="relative" @click="toggleDropdown">
@@ -62,11 +63,11 @@ const toggleMenu = () => {
         <router-link to="#"> About</router-link>
         <router-link to="#"> Contact Us</router-link>
       </div>
-      <img alt="" src="../../assets/image/logo.png">
+      <img alt="" src="@/assets/image/logo.png">
       <div class="grid grid-cols-3">
-        <CarbonShoppingCart/>
-        <Person/>
-      </div>
+          <CarbonShoppingCart/>
+          <Person/>
+        </div>
     </div>
   </nav>
 </template>

@@ -1,7 +1,7 @@
 <script setup>
-import Navbar from "/src/components/Navbar.vue";
-import Footer from "/src/components/Footer.vue";
-import ProductCard from "/src/components/ProductCard.vue";
+import Navbar from "/components/Navbar.vue";
+import Footer from "/components/Footer.vue";
+import ProductCard from "/components/ProductCard.vue";
 </script>
 
 <template>

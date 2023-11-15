@@ -2,7 +2,7 @@
   <footer class="absolute top-full font-body w-full bg-footerColor-dark">
     <div class="px-5 grid gap-5 2xl:px-40 py-5 2xl:py-20 2xl:grid-cols-4 2xl:gap-96">
       <div class="w-56 col-span-2">
-        <img alt="footer-logo" src="../../assets/image/footer.png">
+        <img alt="footer-logo" src="@/assets/image/footer.png">
         <p class="text-white my-3 ">Your natural candle made for your home and for your wellness.</p>
       </div>
       <div class="col-span-2 pt-5 grid grid-cols-2 gap-10 2xl:grid-cols-3">
