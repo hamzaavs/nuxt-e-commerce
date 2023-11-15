@@ -22,7 +22,7 @@ const toggleMenu = () => {
     <!-- Desktop Hi-Fi -->
     <div class="lg:grid lg:grid-cols-3 lg:pl-48 hidden">
       <div>
-        <img alt="" src="@/public/image/logo.png">
+        <img alt="Logo" src="public/assets/image/logo.png">
       </div>
       <div class="grid grid-cols-3 ">
         <div class="relative" @click="toggleDropdown">

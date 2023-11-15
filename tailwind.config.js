@@ -9,7 +9,23 @@ module.exports = {
     "./error.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        footerColor: {
+          dark: "#272727",
+          light: "#E5E5E5",
+          green: "#56B280",
+        },
+      },
+        backgroundImage: {
+          'image': "url('/src/assets/images/bg-image.png')",
+        },
+
+        spacing: {
+            100: "40rem",
+        }
+    },
+
   },
   plugins: [],
 }
