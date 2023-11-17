@@ -11,8 +11,8 @@ const props = defineProps({
 
 <template>
   <div class="p-4">
-
     <div>
+      <NuxtImg alt="product" src="/public/assets/product/product_brown.png"  sizes="20vw"/>
       <h2 class="text-xl mb-2">{{ props.price }}</h2>
       <p class="text-gray-700">{{ props.comment }}</p>
     </div>
