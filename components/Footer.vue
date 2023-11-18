@@ -1,30 +1,77 @@
 <template>
-  <footer class="absolute top-full font-body w-full bg-footerColor-dark">
-    <div class="px-5 grid gap-5 2xl:px-40 py-5 2xl:py-20 2xl:grid-cols-4 2xl:gap-96">
-      <div class="w-56 col-span-2">
-        <NuxtImg alt="footer-logo" src="/public/assest/image/footer.png" />
-        <p class="text-white my-3 ">Your natural candle made for your home and for your wellness.</p>
+  <footer class="absolute top-full w-full bg-footerColor-dark">
+    <div class=" px-5 grid grid-cols-1 md:grid-cols-2 gap-5 py-20 justify-center max-w-screen-xl mx-auto">
+      <div>
+        <NuxtImg alt="footer-logo" src="/public/assest/img/footer.png" />
+        <p class="text-white my-3 w-70 md:w-60">Your natural candle made for your home and for your wellness.</p>
       </div>
-      <div class="col-span-2 pt-5 grid grid-cols-2 gap-10 2xl:grid-cols-3">
-        <div>
-          <h2 class="text-footerColor-green font-bold text-lg">Discovery</h2>
-          <p class="text-gray-300 hover:text-white my-3 text-base">New season</p>
-          <p class="text-gray-300 hover:text-white my-3 text-base">Most season</p>
-          <p class="text-gray-300 hover:text-white my-3 text-base">Most sold</p>
-        </div>
-        <div>
-          <h2 class="text-footerColor-green font-bold text-lg">About</h2>
-          <p class="text-gray-300 hover:text-white my-3 text-base">Help</p>
-          <p class="text-gray-300 hover:text-white my-3 text-base">Shipping</p>
-          <p class="text-gray-300 hover:text-white my-3 text-base">Affiliate</p>
-        </div>
-        <div>
-          <h2 class="text-footerColor-green font-bold text-lg">Info</h2>
-          <p class="text-gray-300 hover:text-white my-3 text-base">Contact us</p>
-          <p class="text-gray-300 hover:text-white my-3 text-base">Privacy Policies</p>
-          <p class="text-gray-300 hover:text-white my-3 text-base">Terms & Conditions</p>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-5">
+        <div v-for="item in footerLinks">
+          <h3 class="text-footerColor-green font-bold">{{ item.title }}</h3>
+          <ul class="my-5">
+            <li v-for="link in item.links" class="my-2">
+              <NuxtLink class="text-white" :to="link.link">{{ link.name }}</NuxtLink>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </footer>
 </template>
+
+<script setup>
+
+const footerLinks = [
+  {
+    title: "Discovery",
+    links: [
+      {
+        name: "New season",
+        link: "#"
+      },
+      {
+        name: "Most searched",
+        link: "#"
+      },
+      {
+        name: "Most selled",
+        link: "#"
+      }
+    ]
+  },
+  {
+    title: "About",
+    links: [
+      {
+        name: "Help",
+        link: "#"
+      },
+      {
+        name: "Shipping",
+        link: "#"
+      },
+      {
+        name: "Affiliate",
+        link: "#"
+      }
+    ]
+  },
+  {
+    title: "Info",
+    links: [
+      {
+        name: "Contact us",
+        link: "#"
+      },
+      {
+        name: "Privacy Policy",
+        link: "#"
+      },
+      {
+        name: "Terms & Conditions",
+        link: "#"
+      }
+    ]
+  }
+];
+</script>

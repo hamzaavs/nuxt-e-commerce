@@ -28,7 +28,7 @@ const items = [
     <!-- Desktop Hi-Fi -->
     <div class="lg:grid lg:grid-cols-3 lg:pl-48 hidden">
       <div>
-        <NuxtImg alt="navbar-logo" src="/public/assets/image/logo.png"/>
+        <NuxtImg src="@/assets/img/logo.png" width="200" height="200"/>
       </div>
       <div>
         <UDropdown :items="items" mode="hover" popper="{ placement: 'bottom-start' }">

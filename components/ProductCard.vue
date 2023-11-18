@@ -1,5 +1,6 @@
 <script setup>
 import { defineProps } from "vue";
+import image from "/assets/img/logo.png";
 const props = defineProps({
   color: String,
   price: String,
@@ -12,7 +13,7 @@ const props = defineProps({
 <template>
   <div class="p-4">
     <div>
-      <NuxtImg alt="product" src="/public/assets/product/product_brown.png"  sizes="20vw"/>
+      <NuxtImg :src="image" />
       <h2 class="text-xl mb-2">{{ props.price }}</h2>
       <p class="text-gray-700">{{ props.comment }}</p>
     </div>

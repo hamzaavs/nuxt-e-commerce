@@ -4,6 +4,7 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxt/image'
   ],
+
   devtools: { enabled: true },
   css: ['/public/assets/main.css'],
   postcss: {
