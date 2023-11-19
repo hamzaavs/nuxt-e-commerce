@@ -1,6 +1,11 @@
 <script setup>
-import CarbonShoppingCart from "@/public/assets/icon/CarbonShoppingCart.vue";
-import Person from "@/public/assets/icon/MaterialSymbolsPersonOutlineRounded.vue";
+import { ref } from "vue";
+import HamburgerMenu from "~/components/navbar/HamburgerMenu.vue";
+
+const showmenu = ref(false);
+const toggleMenu = () => {
+  showmenu.value = !showmenu.value;
+}
 
 const items = [
   [{
@@ -20,6 +25,7 @@ const items = [
     }
   }]
 ]
+
 </script>
 
 <template>
@@ -37,25 +43,15 @@ const items = [
         <NuxtLink class="text-black px-3 py-2 rounded-md text-base font-medium" to="#">About</NuxtLink>
         <NuxtLink class="text-black px-3 py-2 rounded-md text-base font-medium" to="#">Contact Us</NuxtLink>
       </div>
-      <div class="grid grid-cols-3 pl-43">
-        <CarbonShoppingCart/>
-        <Person/>
-      </div>
+        <div class="flex flex-row-reverse gap-10 pl-auto">
+          <Icon size="2rem" name="ic:baseline-shopping-cart" class="text-black"/>
+          <Icon size="2rem" name="material-symbols:person-2-rounded" class="text-black"/>
+        </div>
+
+
     </div>
-
-    <!-- Mobil Hi-Fi -->
-    <div class="lg:hidden grid-cols-3 grid">
-      <UDropdown :items="items" mode="hover" popper="{ placement: 'bottom-start' }">
-        <UButton color="white" label="Discovery" trailing-icon="i-heroicons-chevron-down-20-solid"/>
-      </UDropdown>
-      <router-link to="#"> About</router-link>
-      <router-link to="#"> Contact Us</router-link>
-
-      <NuxtImg alt="" src="@/assets/image/logo.png" />
-      <div class="grid grid-cols-3">
-        <CarbonShoppingCart/>
-        <Person/>
-      </div>
+    <div class="md:hidden">
+      <HamburgerMenu />
     </div>
   </nav>
 </template>

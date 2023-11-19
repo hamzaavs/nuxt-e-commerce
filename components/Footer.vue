@@ -1,5 +1,5 @@
 <template>
-  <footer class="absolute top-full w-full bg-footerColor-dark">
+  <footer class="top-full w-full bg-footerColor-dark">
     <div class=" px-5 grid grid-cols-1 md:grid-cols-2 gap-5 py-20 justify-center max-w-screen-xl mx-auto">
       <div>
         <NuxtImg alt="footer-logo" src="/public/assest/img/footer.png" />
