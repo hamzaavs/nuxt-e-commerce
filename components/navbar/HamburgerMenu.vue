@@ -20,15 +20,15 @@ const items = [
 </script>
 
 <template>
-  <UPopover id="hamburger-button">
-    <UButton id="hamburger-menu" color="white" variant="link" trailing-icon="i-heroicons-bars-3-solid" />
-    <template #popover>
-      <UDropdown :items="items" mode="hover" popper="{ placement: 'bottom-start' }">
-        <UButton variant="solid" color="black" label="Discovery"  trailing-icon="i-heroicons-chevron-down-20-solid"/>
-      </UDropdown>
-      <div class="flex flex-row-reverse gap-10 pl-auto">
-        <Icon size="2rem" name="ic:baseline-shopping-cart" class="text-black"/>
-        <Icon size="2rem" name="material-symbols:person-2-rounded" class="text-black"/>
+  <UPopover >
+    <UButton color="black" trailing-icon="i-heroicons-bars-3-solid" />
+    <template #panel>
+      <div class="flex flex-col bg-white">
+        <UDropdown :items="items" mode="hover" :popper="{ placement: 'right-start'}">
+          <UButton variant="solid" color="black" label="Discovery"  trailing-icon="i-heroicons-chevron-right-20-solid"/>
+        </UDropdown>
+        <NuxtLink class="text-black px-3 py-2 rounded-md text-base font-medium" to="#">About</NuxtLink>
+        <NuxtLink class="text-black px-3 py-2 rounded-md text-base font-medium" to="#">Contact Us</NuxtLink>
       </div>
     </template>
   </UPopover>
