@@ -1,4 +1,6 @@
-<script setup lang="ts">
+<script setup>
+const isOpen = ref(false);
+
 const items = [
   [{
     label: 'New season',
@@ -17,19 +19,30 @@ const items = [
     }
   }]
 ]
+
 </script>
 
 <template>
-  <UPopover >
-    <UButton color="black" trailing-icon="i-heroicons-bars-3-solid" />
-    <template #panel>
-      <div class="flex flex-col bg-white">
-        <UDropdown :items="items" mode="hover" :popper="{ placement: 'right-start'}">
-          <UButton variant="solid" color="black" label="Discovery"  trailing-icon="i-heroicons-chevron-right-20-solid"/>
-        </UDropdown>
-        <NuxtLink class="text-black px-3 py-2 rounded-md text-base font-medium" to="#">About</NuxtLink>
-        <NuxtLink class="text-black px-3 py-2 rounded-md text-base font-medium" to="#">Contact Us</NuxtLink>
-      </div>
-    </template>
-  </UPopover>
+  <div>
+    <UButton @click="isOpen = true" trailing-icon="i-heroicons-bars-3-solid" />
+
+    <USlideover v-model="isOpen" prevent-close>
+      <UCard class="flex flex-col bg-white" >
+        <template #header>
+            <UButton color="gray" variant="ghost" icon="i-heroicons-x-mark-20-solid" class="-my-1" @click="isOpen = false" />
+        </template>
+        <div class="flex-col flex gap-8 m-10">
+          <UDropdown :items="items" mode="hover" :popper="{ placement: 'bottom-start'}">
+            <UButton variant="solid" color="indigo" label="Discovery"
+                     trailing-icon="i-heroicons-chevron-right-20-solid"/>
+          </UDropdown>
+          <NuxtLink class="text-white px-3 py-2 rounded-md text-base" to="#">About</NuxtLink>
+          <NuxtLink class="text-white px-3 py-2 rounded-md text-base" to="#">Contact Us</NuxtLink>
+        </div>
+
+
+      </UCard>
+    </USlideover>
+  </div>
 </template>
+
