@@ -29,12 +29,12 @@ const items = [
 </script>
 
 <template>
-  <nav class="fixed bg-white top-0 border-b-2 border-b-gray-200 h-20 p-4 w-screen z-10 shadow-md grid grid-cols-3">
+  <nav class="sticky bg-white top-0 border-b-2 border-b-gray-200 h-20 p-4 w-screen z-10 shadow-md grid grid-cols-3">
     <div class="md:hidden">
       <HamburgerMenu/>
     </div>
     <div>
-      <NuxtImg height="200" src="@/assets/img/logo.png" width="200"/>
+      <NuxtImg src="logo.png" height="200" width="200"/>
     </div>
     <div class="hidden md:block">
       <UDropdown :items="items" mode="hover" popper="{ placement: 'bottom-start' }">
@@ -43,7 +43,7 @@ const items = [
       <NuxtLink class="text-black px-3 py-2 rounded-md text-base font-medium" to="#">About</NuxtLink>
       <NuxtLink class="text-black px-3 py-2 rounded-md text-base font-medium" to="#">Contact Us</NuxtLink>
     </div>
-    <div class="flex flex-row-reverse gap-10 max-w-xl mx-auto ">
+    <div class="flex flex-row-reverse gap-2 ml-auto max-w-xl md:mx-auto md:gap-10">
       <Icon class="text-black" name="ic:baseline-shopping-cart" size="2rem"/>
       <Icon class="text-black" name="material-symbols:person-2-rounded" size="2rem"/>
     </div>

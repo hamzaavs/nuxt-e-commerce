@@ -2,11 +2,11 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/ui',
     '@nuxt/image',
-      'nuxt-icon',
+    'nuxt-icon',
   ],
 
   devtools: { enabled: true },
-  css: ['/public/assets/main.css'],
+  css: ['/assets/main.css'],
   postcss: {
     plugins: {
       tailwindcss: {},

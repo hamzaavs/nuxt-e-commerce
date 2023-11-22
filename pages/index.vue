@@ -5,14 +5,17 @@ import ProductCard from "/components/ProductCard.vue";
 </script>
 
 <template>
-
-
-    <div class="flex flex-col w-screen h-screen justify-between">
+  <div class="flex flex-col w-screen h-screen justify-between">
+    <div>
+      <Navbar/>
       <div>
-        <Navbar />
-        <ProductCard comment="lorem ipsum da itsum" price="9.99"/>
+        <ProductCard
+          name="Brown Candle"
+          comment="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore doloribus harum hic iure neque nobis perferendis reprehenderit? Eos, facere, odio?"
+          price="9,99$"
+        />
       </div>
-
-      <Footer/>
     </div>
+    <Footer/>
+  </div>
 </template>
