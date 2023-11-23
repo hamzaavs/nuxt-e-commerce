@@ -2,7 +2,7 @@
   <footer class="top-full w-full bg-footerColor-dark">
     <div class=" px-5 grid grid-cols-1 md:grid-cols-2 gap-5 py-20 justify-center max-w-screen-xl mx-auto">
       <div>
-        <img alt="footer-logo" src="../assets/logo.png" />
+        <NuxtImg src="/footer.svg" width="100" height="100"/>
         <p class="text-white my-3 w-70 md:w-60">Your natural candle made for your home and for your wellness.</p>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-3 gap-5">

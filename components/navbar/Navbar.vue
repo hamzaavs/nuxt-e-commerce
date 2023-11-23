@@ -34,7 +34,7 @@ const items = [
       <HamburgerMenu/>
     </div>
     <div>
-      <NuxtImg src="logo.png" height="200" width="200"/>
+      <NuxtImg src="/logo.svg" height="150" width="150"/>
     </div>
     <div class="hidden md:block">
       <UDropdown :items="items" mode="hover" popper="{ placement: 'bottom-start' }">
