@@ -2,8 +2,6 @@
 import Navbar from "/components/navbar/Navbar.vue";
 import Footer from "/components/Footer.vue";
 import ProductCard from "/components/ProductCard.vue";
-
-
 </script>
 
 <template>
@@ -11,7 +9,8 @@ import ProductCard from "/components/ProductCard.vue";
     <div>
       <Navbar/>
       <div class="bg-white">
-        <ProductCard />
+        <NaturalCandle/>
+        <ProductCard/>
       </div>
     </div>
     <Footer/>
