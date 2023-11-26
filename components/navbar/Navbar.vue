@@ -29,7 +29,7 @@ const items = [
 </script>
 
 <template>
-  <nav class="sticky bg-white top-0 border-b-2 border-b-gray-200 h-20 p-4 w-screen z-10 shadow-md grid grid-cols-3">
+  <nav class="sticky bg-white top-0 border-b-2 border-b-gray-200 h-20 p-4 max-w-screen z-10 shadow-md grid grid-cols-3">
     <div class="md:hidden">
       <HamburgerMenu/>
     </div>

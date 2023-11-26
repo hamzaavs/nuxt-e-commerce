@@ -56,9 +56,9 @@ const productCardValue = [
   <h1 class="text-center text-black font-medium text-5xl mb-5">Products</h1>
   <p class="text-center text-black italic mb-5">Order it for you or for your beloved ones </p>
   <div class="grid grid-cols-1 md:grid-cols-4 gap-4 p-4">
-    <div v-for="item in productCardValue" class="w-72 p-4 m-auto shadow-lg rounded-2xl">
-      <div class="bg-gray-100 w-[100%] p-0">
-        <NuxtImg :src="'/product-' + item.color + '.svg'" height="300" width="300"/>
+    <div v-for="item in productCardValue" class="w-2/3 p-4 m-auto shadow-lg rounded-2xl">
+      <div class="bg-gray-100 w-full top-0 p-0 max-w-screen m-auto">
+        <NuxtImg :src="'/product-' + item.color + '.svg'" height="300" />
       </div>
       <div>
         <h2 class="text-black font-bold pb-3">{{ item.name }}</h2>

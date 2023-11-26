@@ -1,13 +1,13 @@
 <template>
-  <div
-    class="md:bg-[url('/bg-image.svg')] bg-[url('/natural-candle-mobile.svg')] h-[50rem] md:h-[45rem] bg-fixed bg-cover flex items-center justify-center mb-10">
-    <div class="bg-white w-80 h-96 md:w-[45rem] md:h-80 rounded-sm flex flex-col justify-center items-center ">
-      <h2 class="text-5xl">🌱</h2>
-      <h2 class="text-black text-center px-4 text-5xl"> The nature candle</h2>
-      <p class="text-black text-center px-5 py-5 md:px-28">All handmade with natural soy wax, Candleaf is a companion
-        for all your pleasure
-        moments </p>
-      <UButton color="green" label="Discovery our collection" class="px-16 py-2 text-white"/>
+  <div class="md:bg-[url('/bg-image.svg')] bg-[url('/natural-candle-mobile.svg')] h-screen w-screen bg-fixed bg-cover flex items-center justify-center mb-10">
+    <div class="bg-white/80 w-5/6 h-1/2 md:w-1/2 rounded-sm flex flex-col justify-center items-center">
+      <div class=" w-3/4 md:w-2/3">
+        <h2 class="text-5xl text-center">🌱</h2>
+        <h2 class="text-black text-center text-5xl"> The nature candle</h2>
+        <p class="text-black text-center mb-8 ">All handmade with natural soy wax, Candleaf is a companion
+          for all your pleasure moments </p>
+      </div>
+        <UButton class="px-12 mx-auto" color="green" label="Discover our collection"/>
     </div>
   </div>
 </template>
