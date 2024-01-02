@@ -7,7 +7,7 @@
         <p class="text-black text-center mb-8 ">All handmade with natural soy wax, Candleaf is a companion
           for all your pleasure moments </p>
       </div>
-        <UButton class="px-12 mx-auto" color="green" label="Discover our collection"/>
+        <MazBtn class="px-12 mx-auto" color="success">Discover our collection</MazBtn>
     </div>
   </div>
 </template>

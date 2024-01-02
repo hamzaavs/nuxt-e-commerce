@@ -33,7 +33,7 @@ const items = [
     <div class="md:hidden">
       <HamburgerMenu/>
     </div>
-    <div>
+    <div class="relative md:left-36 left-0">
       <NuxtImg src="/logo.svg" height="150" width="150"/>
     </div>
     <div class="hidden md:block">
@@ -43,7 +43,7 @@ const items = [
       <NuxtLink class="text-black px-3 py-2 rounded-md text-base font-medium" to="#">About</NuxtLink>
       <NuxtLink class="text-black px-3 py-2 rounded-md text-base font-medium" to="#">Contact Us</NuxtLink>
     </div>
-    <div class="flex flex-row-reverse gap-2 ml-auto max-w-xl md:mx-auto md:gap-10">
+    <div class="flex flex-row-reverse gap-2 ml-auto max-w-xl md:mx-auto md:gap-10 relative right-10">
       <Icon class="text-black" name="ic:baseline-shopping-cart" size="2rem"/>
       <Icon class="text-black" name="material-symbols:person-2-rounded" size="2rem"/>
     </div>

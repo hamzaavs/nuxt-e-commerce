@@ -1,16 +1,17 @@
 <script setup>
 import Navbar from "/components/navbar/Navbar.vue";
 import Footer from "/components/Footer.vue";
-import ProductCard from "/components/ProductCard.vue";
+import ProductInfo from "/components/ProductInfo.vue";
 </script>
 
 <template>
-  <div class="flex flex-col w-screen h-screen justify-between">
+  <div class="flex flex-col w-screen h-screen bg-white justify-between">
     <div>
       <Navbar/>
       <div class="bg-white">
-        <NaturalCandle/>
-        <ProductCard/>
+        <NaturalCandle />
+        <ProductInfo />
+        <CleanSoywax />
       </div>
     </div>
     <Footer/>

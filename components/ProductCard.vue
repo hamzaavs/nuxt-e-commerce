@@ -1,4 +1,5 @@
-<script setup>
+<script setup lang="ts">
+import MazBtn from "maz-ui/components/MazBtn"
 const productCardValue = [
   {
     color: "1",
@@ -53,12 +54,11 @@ const productCardValue = [
 
 
 <template>
-  <h1 class="text-center text-black font-medium text-5xl mb-5">Products</h1>
-  <p class="text-center text-black italic mb-5">Order it for you or for your beloved ones </p>
-  <div class="grid grid-cols-1 md:grid-cols-4 gap-4 p-4">
-    <div v-for="item in productCardValue" class="w-2/3 p-4 m-auto shadow-lg rounded-2xl">
+
+  <div class="w-11/12 grid grid-cols-1 2xl:grid-cols-4 md:grid-cols-2 gap-4 p-4 m-auto">
+    <div v-for="item in productCardValue" class="w-3/4 p-4 m-auto shadow-lg rounded-2xl">
       <div class="bg-gray-100 w-full top-0 p-0 max-w-screen m-auto">
-        <NuxtImg :src="'/product-' + item.color + '.svg'" height="300" />
+        <NuxtImg :src="'/product-' + item.color + '.svg'" height="300"/>
       </div>
       <div>
         <h2 class="text-black font-bold pb-3">{{ item.name }}</h2>
@@ -66,5 +66,8 @@ const productCardValue = [
         <p class="text-primary text-right mb-2">{{ item.price }}</p>
       </div>
     </div>
+  </div>
+  <div class="w-1/4 visible m-auto md:invisible">
+    <MazBtn color="success">See More</MazBtn>
   </div>
 </template>
