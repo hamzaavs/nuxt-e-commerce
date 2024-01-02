@@ -1,11 +1,5 @@
 <script setup lang="ts">
-import MazBtn from "maz-ui/components/MazBtn"
-
 const props = defineProps({
-  button_label: {
-    type: String,
-    required: true
-  },
   required: {
     type: Boolean,
     default: false
@@ -45,8 +39,5 @@ const props = defineProps({
         <p class="text-primary text-right mb-2">{{ props.price }}</p>
       </div>
     </div>
-  </div>
-  <div class="w-1/4 visible m-auto md:invisible">
-    <MazBtn color="success" v-if="props.required">{{props.button_label}}</MazBtn>
   </div>
 </template>
