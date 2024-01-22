@@ -21,8 +21,8 @@ const props = defineProps({
   },
   price: {
     type: String,
-    default: "9,99$",
-    required: true
+    required: true,
+    default: "9,99$"
   }
 })
 </script>
@@ -30,7 +30,7 @@ const props = defineProps({
 <template>
   <div>
     <div class="w-3/4 p-4 m-auto shadow-lg rounded-2xl">
-      <div class="bg-gray-100 w-full top-0 p-0 max-w-screen m-auto">
+      <div class="bg-gray-100/50 w-full top-0 p-0 max-w-screen m-auto">
         <NuxtImg :src="'/product-' + props.color + '.svg'" height="300"/>
       </div>
       <div>

@@ -9,13 +9,25 @@ const props = defineProps({
     type: String,
     required: true,
   },
+  title_class: {
+    type: String,
+    required: true,
+    },
+  comment_class: {
+    type: String,
+    required: true,
+  },
+
 })
 </script>
 
 <template>
-  <div class="my-5">
-    <h1 class="text-center text-black font-medium text-5xl">{{ props.title }}</h1>
-    <p class="text-center text-black italic pt-20">{{ props.description }}</p>
+  <div class="my-5 px-10">
+    <div>
+      <h1 :class="props.title_class" class="text-black">{{ props.title }}</h1>
+      <p :class="props.comment_class">{{ props.description }}</p>
+    </div>
     <slot></slot>
   </div>
+
 </template>
