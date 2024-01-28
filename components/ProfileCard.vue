@@ -21,7 +21,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="bg-white w-3/4 h-4/5 px-10 mx-auto my-10 md:w-full">
+  <div class="bg-white w-3/4 h-4/5 px-10 mx-auto my-10 md:w-full shadow-2xl rounded-lg">
     <div class="w-1/2 mx-auto pt-10">
       <NuxtImg :src="'/comment/profile_foto/profile-' + props.stars_img + '.svg'" alt="stars" />
       <NuxtImg :src="'/comment/stars/star-' + props.profile_img + '.svg'" alt="stars" />
