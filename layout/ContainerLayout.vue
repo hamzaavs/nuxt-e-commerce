@@ -11,10 +11,12 @@ const props = defineProps({
   },
   title_class: {
     type: String,
+    default: 'text-black',
     required: true,
     },
   comment_class: {
     type: String,
+    default: 'text-black italic py-6',
     required: true,
   },
 
@@ -22,7 +24,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="my-5 px-10">
+  <div class="">
     <div>
       <h1 :class="props.title_class" class="text-black">{{ props.title }}</h1>
       <p :class="props.comment_class">{{ props.description }}</p>

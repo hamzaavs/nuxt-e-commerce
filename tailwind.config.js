@@ -17,15 +17,13 @@ module.exports = {
           green: "#56B280",
         },
       },
-        backgroundImage: {
-          'image': "url('/src/assets/images/bg-image.png')",
-        },
-
-        spacing: {
-            100: "40rem",
-        }
+      backgroundImage: {
+        'image': "url('/src/assets/images/bg-image.png')",
+      },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif']
+      },
     },
-
   },
   plugins: [],
 }

@@ -3,7 +3,8 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxt/image',
     'nuxt-icon',
-    'maz-ui/nuxt'
+    'maz-ui/nuxt',
+    'nuxt-swiper',
   ],
 
   devtools: { enabled: true },
