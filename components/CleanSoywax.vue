@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import ContainerLayout from "~/layout/ContainerLayout.vue";
-import {soyWaxValue} from "~/ulits/soyWaxValues";
+import {soyWaxValue} from "~/ulits/values/soyWax";
 
-const soyWaxValues = soyWaxValue();
+const values = soyWaxValue();
 </script>
 
 <template>
@@ -21,7 +21,7 @@ const soyWaxValues = soyWaxValue();
       </div>
       <NuxtImg class="inline md:hidden" src="/image.svg" width="595"/>
       <div class="py-5 md:py-12">
-        <p v-for="item in soyWaxValues" class="text-black py-1 text-base">
+        <p v-for="item in values" class="text-black py-1 text-base">
           <Icon name="teenyicons:tick-circle-outline"/>
           <strong class="pl-3">{{ item.name }}</strong>
           {{ item.description }}

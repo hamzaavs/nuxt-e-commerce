@@ -1,10 +1,10 @@
 <script lang="ts" setup>
 import ContainerLayout from "~/layout/ContainerLayout.vue";
-import {ProfileCardValues} from "~/ulits/profileCardValues";
+import {Profile} from "~/ulits/values/card/profile";
 import SliderMobile from "~/components/SliderMobile.vue";
 import ProfileCard from "~/components/ProfileCard.vue";
 
-const profileCardValues = ProfileCardValues();
+const values = Profile();
 </script>
 
 <template>
@@ -16,7 +16,7 @@ const profileCardValues = ProfileCardValues();
     title_class="text-black text-center text-4xl text-center"
   >
     <div class="inline md:hidden">
-      <SliderMobile :items="ProfileCardValues" />
+      <SliderMobile :items="Profile" />
     </div>
     <div class="hidden md:grid md:grid-cols-3 md:w-7/12 md:mx-auto md:gap-10">
         <ProfileCard

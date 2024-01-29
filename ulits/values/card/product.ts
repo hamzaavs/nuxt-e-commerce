@@ -1,4 +1,4 @@
-export function ProductCardValue ()  {
+export function Product ()  {
      return [
         {
             color: "1",

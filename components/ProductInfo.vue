@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import ProductCard from "/components/ProductCard.vue";
 import ContainerLayout from "~/layout/ContainerLayout.vue";
-import { ProductCardValue } from "~/ulits/productCardValue";
+import { Product } from "~/ulits/values/card/product";
 
-const productCardValue = ProductCardValue();
+const values = Product();
 
 const props = defineProps({
   show_all: {
@@ -15,14 +15,14 @@ const props = defineProps({
 
 <template>
   <ContainerLayout
-    :title="show_all ? 'Products' : 'Popular'"
-    :description="show_all? 'Order it for you or for your beloved ones' : 'Our top selling product that you may like'"
+    :title="props.show_all ? 'Products' : 'Popular'"
+    :description="props.show_all? 'Order it for you or for your beloved ones' : 'Our top selling product that you may like'"
     title_class="text-center text-4xl font-bold font-sans text-black"
     comment_class="text-center text-black italic py-6"
     class="py-20">
-    <div class="w-11/12 grid grid-cols-1 2xl:grid-cols-4 md:grid-cols-2 gap-4 p-4 m-auto" v-if="show_all">
+    <div class="w-11/12 grid grid-cols-1 2xl:grid-cols-4 md:grid-cols-2 gap-4 p-4 m-auto" v-if="props.show_all">
         <ProductCard
-          v-for="item in productCardValue"
+          v-for="item in values"
           :color="item.color"
           :comment="item.comment"
           :name="item.name"
@@ -33,7 +33,7 @@ const props = defineProps({
     </div>
     <div v-else class="w-11/12 grid grid-cols-1 2xl:grid-cols-4 md:grid-cols-2 gap-4 p-4 m-auto">
       <ProductCard
-        v-for="item in productCardValue.slice(0, 4)"
+        v-for="item in values.slice(0, 4)"
         :color="item.color"
         :comment="item.comment"
         :name="item.name"

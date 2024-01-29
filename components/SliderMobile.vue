@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import {ProfileCardValues} from "~/ulits/profileCardValues";
+import {Profile} from "~/ulits/values/card/profile";
 import ProfileCard from "~/components/ProfileCard.vue";
 
-const profileCardValues = ProfileCardValues();
+const profileCardValues = Profile();
 
 </script>
 

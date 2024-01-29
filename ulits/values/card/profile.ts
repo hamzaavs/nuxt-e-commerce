@@ -1,4 +1,4 @@
-export function ProfileCardValues() {
+export function Profile() {
     return [
         {
             profile_foto: "1",
