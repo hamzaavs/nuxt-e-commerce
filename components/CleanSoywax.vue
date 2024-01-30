@@ -15,7 +15,7 @@ const values = soyWaxValue();
         <h1 class="text-4xl text-center text-black font-normal md:text-start md:text-5xl md:font-900">
           fragrant soy wax
         </h1>
-        <p class="text-footerColor-green text-base text-center py-6 md:text-start">
+        <p class="text-green text-base text-center py-6 md:text-start">
           Made for your home and for your wellness
         </p>
       </div>

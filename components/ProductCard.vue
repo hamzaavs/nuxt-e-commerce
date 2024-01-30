@@ -36,7 +36,7 @@ const props = defineProps({
       <div>
         <h2 class="text-black font-bold pb-3">{{ props.name }}</h2>
         <p class="text-gray-700">{{ props.comment }}</p>
-        <p class="text-primary text-right mb-2">{{ props.price }}</p>
+        <p class=" text-green text-right mb-2">{{ props.price }}</p>
       </div>
     </div>
   </div>

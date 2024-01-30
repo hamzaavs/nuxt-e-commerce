@@ -11,11 +11,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        footerColor: {
-          dark: "#272727",
-          light: "#E5E5E5",
-          green: "#56B280",
-        },
+        dark: "#272727",
+        light: "#E5E5E5",
+        green: "#56B280",
       },
       backgroundImage: {
         'image': "url('/src/assets/images/bg-image.png')",

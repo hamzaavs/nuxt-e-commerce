@@ -1,12 +1,12 @@
 <script setup>
-import { FooterValues } from "~/ulits/values/footer.js";
+import { FooterValues } from "~/ulits/values/footer.ts";
 
 const values = FooterValues();
 </script>
 
 
 <template>
-  <footer class="top-full w-full bg-footerColor-dark">
+  <footer class="top-full w-full bg-dark">
     <div class=" px-5 grid grid-cols-1 md:grid-cols-2 gap-5 py-20 justify-center max-w-screen-xl mx-auto">
       <div>
         <NuxtImg src="/footer.svg" width="100" height="100"/>
