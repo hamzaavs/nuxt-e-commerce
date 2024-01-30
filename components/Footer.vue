@@ -14,7 +14,7 @@ const values = FooterValues();
       </div>
       <div class="grid grid-cols-2 md:grid-cols-3 gap-5">
         <div v-for="item in values">
-          <h3 class="text-footerColor-green font-bold">{{ item.title }}</h3>
+          <h3 class="text-green font-bold">{{ item.title }}</h3>
           <ul class="my-5">
             <li v-for="link in item.links" class="my-2">
               <NuxtLink class="text-white" :to="link.link">{{ link.name }}</NuxtLink>
